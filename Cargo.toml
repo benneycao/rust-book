@@ -5,5 +5,7 @@ members = [
     "ch03_custom_type",
     "ch04",
     "ch10",
-    "ch13"
+    "ch13",
+    "ch15",
+    "ch16",
 ]
