@@ -1,5 +1,8 @@
 [workspace]
 members = [
+    "ch01_hello_world",
+    "ch02_primitives",
+    "ch03_custom_type",
     "ch04",
     "ch10",
     "ch13"
