@@ -16,4 +16,6 @@ members = [
     "dedao-rust-1/ch16_deref",
     "dedao-rust-1/ch17_out_of_memory",
     "dedao-rust-1/ch19_unsafe",
+    "dedao-rust-1/ch20_vec_source_code",
+    "dedao-rust-1/ch21_generic",
 ]

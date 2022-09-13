@@ -76,6 +76,14 @@ name = "ch19_unsafe"
 version = "0.1.0"
 
 [[package]]
+name = "ch20_vec_source_code"
+version = "0.1.0"
+
+[[package]]
+name = "ch21_generic"
+version = "0.1.0"
+
+[[package]]
 name = "getrandom"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
