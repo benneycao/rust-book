@@ -1,11 +1,13 @@
 [workspace]
 members = [
-    "ch01_hello_world",
-    "ch02_primitives",
-    "ch03_custom_type",
-    "ch04",
-    "ch10",
-    "ch13",
-    "ch15",
-    "ch16",
+    "the_rust_cookbook/ch01_algorithms",
+    "rust-examples/ch01_hello_world",
+    "rust-examples/ch02_primitives",
+    "rust-examples/ch03_custom_type",
+    "rust-examples/ch09_function",
+    "the-rust-programming-language/ch04",
+    "the-rust-programming-language/ch10",
+    "the-rust-programming-language/ch13",
+    "the-rust-programming-language/ch15",
+    "the-rust-programming-language/ch16",
 ]
