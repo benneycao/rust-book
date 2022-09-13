@@ -40,7 +40,15 @@ name = "ch10"
 version = "0.1.0"
 
 [[package]]
+name = "ch11_ownership_and_move"
+version = "0.1.0"
+
+[[package]]
 name = "ch13"
+version = "0.1.0"
+
+[[package]]
+name = "ch13_borrow_checked"
 version = "0.1.0"
 
 [[package]]
@@ -48,7 +56,23 @@ name = "ch15"
 version = "0.1.0"
 
 [[package]]
+name = "ch15_internal_mutablity"
+version = "0.1.0"
+
+[[package]]
 name = "ch16"
+version = "0.1.0"
+
+[[package]]
+name = "ch16_deref"
+version = "0.1.0"
+
+[[package]]
+name = "ch17_out_of_memory"
+version = "0.1.0"
+
+[[package]]
+name = "ch19_unsafe"
 version = "0.1.0"
 
 [[package]]

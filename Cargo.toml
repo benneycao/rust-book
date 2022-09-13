@@ -10,4 +10,10 @@ members = [
     "the-rust-programming-language/ch13",
     "the-rust-programming-language/ch15",
     "the-rust-programming-language/ch16",
+    "dedao-rust-1/ch11_ownership_and_move",
+    "dedao-rust-1/ch13_borrow_checked",
+    "dedao-rust-1/ch15_interior_mutability",
+    "dedao-rust-1/ch16_deref",
+    "dedao-rust-1/ch17_out_of_memory",
+    "dedao-rust-1/ch19_unsafe",
 ]
