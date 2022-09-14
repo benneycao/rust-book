@@ -92,6 +92,26 @@ name = "ch23_static_and_dynamic_dispatch"
 version = "0.1.0"
 
 [[package]]
+name = "ch24_contains_and_iterator"
+version = "0.1.0"
+
+[[package]]
+name = "ch25_generator"
+version = "0.1.0"
+
+[[package]]
+name = "ch26_standard_library"
+version = "0.1.0"
+
+[[package]]
+name = "ch27_concurrence"
+version = "0.1.0"
+
+[[package]]
+name = "ch29_shared_state"
+version = "0.1.0"
+
+[[package]]
 name = "getrandom"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"

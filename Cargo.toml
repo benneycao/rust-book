@@ -19,5 +19,10 @@ members = [
     "dedao-rust-1/ch20_vec_source_code",
     "dedao-rust-1/ch21_generic",
     "dedao-rust-1/ch22_closure",
-    "dedao-rust-1/ch23_static_and_dynamic_dispatch"
+    "dedao-rust-1/ch23_static_and_dynamic_dispatch",
+    "dedao-rust-1/ch24_container_and_iterator",
+    "dedao-rust-1/ch25_generator",
+    "dedao-rust-1/ch26_standard_library",
+    "dedao-rust-1/ch27_concurrence",
+    "dedao-rust-1/ch29_shared_state",
 ]
