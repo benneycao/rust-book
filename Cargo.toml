@@ -19,4 +19,5 @@ members = [
     "dedao-rust-1/ch20_vec_source_code",
     "dedao-rust-1/ch21_generic",
     "dedao-rust-1/ch22_closure",
+    "dedao-rust-1/ch23_static_and_dynamic_dispatch"
 ]

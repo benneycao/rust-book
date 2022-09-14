@@ -1,6 +1,8 @@
 mod closure_type;
 mod closure_as_parameter;
 mod closure_as_return_type;
+mod closure_lifetime;
+mod static_dynamic_dispatch;
 
 fn main() {
     println!("hello");

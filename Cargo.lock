@@ -88,6 +88,10 @@ name = "ch22_closure"
 version = "0.1.0"
 
 [[package]]
+name = "ch23_static_and_dynamic_dispatch"
+version = "0.1.0"
+
+[[package]]
 name = "getrandom"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
