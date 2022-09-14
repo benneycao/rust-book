@@ -18,4 +18,5 @@ members = [
     "dedao-rust-1/ch19_unsafe",
     "dedao-rust-1/ch20_vec_source_code",
     "dedao-rust-1/ch21_generic",
+    "dedao-rust-1/ch22_closure",
 ]
