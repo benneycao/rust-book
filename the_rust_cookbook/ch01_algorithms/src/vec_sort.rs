@@ -23,10 +23,7 @@ fn test_struct() {
 
     impl Person {
         pub fn new(name: String, age: u32) -> Self {
-            Person {
-                name,
-                age,
-            }
+            Person { name, age }
         }
     }
     let mut people = vec![
@@ -43,7 +40,8 @@ fn test_struct() {
             Person::new("Al".to_string(), 60),
             Person::new("John".to_string(), 1),
             Person::new("Zoe".to_string(), 25),
-        ]);
+        ]
+    );
 
     // 根据 age 值对 people 进行排序
     people.sort_by(|a, b| b.age.cmp(&a.age));
@@ -54,5 +52,6 @@ fn test_struct() {
             Person::new("Al".to_string(), 60),
             Person::new("Zoe".to_string(), 25),
             Person::new("John".to_string(), 1),
-        ]);
+        ]
+    );
 }

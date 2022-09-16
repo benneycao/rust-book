@@ -1,6 +1,6 @@
+use crate::ref_cell::List::{Cons, Nil};
 use std::cell::{Cell, RefCell};
 use std::rc::Rc;
-use crate::ref_cell::List::{Cons, Nil};
 
 #[test]
 fn test_cell() {
@@ -42,22 +42,3 @@ fn test_list() {
     println!("b after = {:?}", b);
     println!("c after = {:?}", c);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

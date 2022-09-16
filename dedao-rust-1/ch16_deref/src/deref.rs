@@ -11,7 +11,7 @@ fn test_deref() {
     let p = *b; // i32
     let p = &*b; // &i32
     let v = vec![1, 2, 3];
-    let p =&v[0..1];
+    let p = &v[0..1];
     eprintln!("p = {:?}", p);
 }
 
@@ -37,22 +37,3 @@ fn test_conflicts_deref() {
     let ps1 = (*s).clone();
     let pps1 = (&**s).clone();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

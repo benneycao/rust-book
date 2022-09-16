@@ -33,24 +33,4 @@ fn test_refcell() {
 
     shared2.borrow_mut().push(5);
     eprintln!("vec = {:?}", shared_vec.borrow());
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

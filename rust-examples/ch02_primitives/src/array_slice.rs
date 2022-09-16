@@ -5,19 +5,19 @@ fn test_array_slice() {
     // 定义一个数组
     let arr = [1, 2, 3, 4, 5];
     eprintln!("arr = {:?}", arr);
-    
+
     // 引用数组，创建一个数组的全切片
     let slice = &arr;
     eprintln!("slice = {:?}", slice);
-    
+
     // 引用数组部份，从索引 1 开始至结束
     let slice = &arr[1..];
     eprintln!("slice = {:?}", slice);
-    
+
     // 从开头引用至索引为3的元素
     let slice = &arr[0..4];
     eprintln!("slice = {:?}", slice);
-    
+
     // 引用数组的中间部份如 1..3 表示从索引1开始引用长度为2
     let slice = &arr[1..3];
     eprintln!("slice = {:?}", slice);

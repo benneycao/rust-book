@@ -21,13 +21,19 @@ struct Tweet {
 
 impl Summary for NewsArticle {
     fn summarize(&self) -> String {
-        format!("This is NewsArticle summarize, and author is {:?}", self.author)
+        format!(
+            "This is NewsArticle summarize, and author is {:?}",
+            self.author
+        )
     }
 }
 
 impl Summary for Tweet {
     fn summarize(&self) -> String {
-        format!("This is Tweet summarize, and username is {:?}, content is {:?}", self.username, self.content)
+        format!(
+            "This is Tweet summarize, and username is {:?}, content is {:?}",
+            self.username, self.content
+        )
     }
 }
 
@@ -56,13 +62,3 @@ fn test_summary_trait() {
     notify(tweet);
     notify(news_article);
 }
-
-
-
-
-
-
-
-
-
-

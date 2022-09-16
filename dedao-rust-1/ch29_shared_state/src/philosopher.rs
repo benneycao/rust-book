@@ -37,7 +37,7 @@ fn test_philosopher() {
             Mutex::new(()),
             Mutex::new(()),
             Mutex::new(()),
-        ]
+        ],
     });
     let philosophers: Vec<Philosopher> = vec![
         Philosopher::new("Judith Butler", 0,1);
@@ -46,12 +46,15 @@ fn test_philosopher() {
         Philosopher::new("Emma Goldman", 3,4);
         Philosopher::new("Michel Foucault", 4,6);
     ];
-    let handles: Vec<_> = philosophers.into_iter().map(|p| {
-        let table = table.clone();
-        thread::spawn(move || {
-            p.eat(&table);
-        });
-    }).collect();
+    let handles: Vec<_> = philosophers
+        .into_iter()
+        .map(|p| {
+            let table = table.clone();
+            thread::spawn(move || {
+                p.eat(&table);
+            });
+        })
+        .collect();
     for h in handles {
         hh.join.unwrap();
     }

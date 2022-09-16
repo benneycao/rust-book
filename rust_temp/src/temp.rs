@@ -56,5 +56,4 @@ fn test_a() {
     eprintln!("struct D size = {:?}", i);
     let i = size_of::<E>();
     eprintln!("struct E size = {:?}", i);
-
 }

@@ -56,22 +56,3 @@ fn test_closure_get_ownership() {
 
     handle.join().unwrap();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

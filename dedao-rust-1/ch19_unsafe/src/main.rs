@@ -12,9 +12,7 @@ fn main() {
 }
 
 fn raw_to_ref<'a>(p: *const i32) -> &'a i32 {
-    unsafe {
-        &*p
-    }
+    unsafe { &*p }
 }
 
 #[test]
@@ -60,7 +58,6 @@ fn swap<T>(x: &mut T, y: &mut T) {
     }
 }
 
-
 #[test]
 #[allow(unused)]
 fn test_swap() {
@@ -99,22 +96,3 @@ fn test_alias_and_mutation() {
     }
     eprintln!("&x = {:?}", &x);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

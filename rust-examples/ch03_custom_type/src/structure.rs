@@ -35,7 +35,9 @@ fn test_struct() {
 
     let left_top = Point(0, 10);
     let bottom_right = Point(10, 0);
-    let rectangle = Rectangle { top_left: left_top, bottom_right };
+    let rectangle = Rectangle {
+        top_left: left_top,
+        bottom_right,
+    };
     eprintln!("rectangle = {:?}", rectangle);
 }
-

@@ -56,7 +56,6 @@ fn test_mutex_thread() {
     println!("Result: {}", *counter.lock().unwrap());
 }*/
 
-
 #[test]
 fn test_mutex_thread_by_arc() {
     let counter = Arc::new(Mutex::new(0));
@@ -74,21 +73,3 @@ fn test_mutex_thread_by_arc() {
     }
     println!("Result: {}", *counter.lock().unwrap());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

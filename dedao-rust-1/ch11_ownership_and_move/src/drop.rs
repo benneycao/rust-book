@@ -28,12 +28,8 @@ fn test_foo() {
 fn test_file() {
     let f = File::open("hello.txt");
     let mut f = match f {
-        Ok(f) => {
-            f
-        }
-        Err(_) => {
-            File::create("hello.txt").unwrap()
-        }
+        Ok(f) => f,
+        Err(_) => File::create("hello.txt").unwrap(),
     };
     let mut content = String::new();
     let result = f.read_to_string(&mut content);

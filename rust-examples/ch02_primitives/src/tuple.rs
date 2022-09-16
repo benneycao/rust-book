@@ -9,10 +9,9 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
 
 #[test]
 fn test_tuple() {
-    let pair = (1,true);
+    let pair = (1, true);
     eprintln!("pair = {:?}", pair);
     let reverse_pair = reverse(pair);
     println!("0.{} 1.{}", reverse_pair.0, reverse_pair.1);
     eprintln!("reverse_pair = {:?}", reverse_pair);
-
 }

@@ -21,7 +21,7 @@ impl List {
     fn len(&self) -> u32 {
         match *self {
             Cons(_, ref tail) => 1 + tail.len(),
-            Nil => 0
+            Nil => 0,
         }
     }
 
@@ -32,10 +32,10 @@ impl List {
                 // `format!` 和 `print!` 类似，但返回的是一个堆分配的字符串，
                 // 而不是打印结果到控制台上
                 format!("{}, {}", head, tail.stringify())
-            },
+            }
             Nil => {
                 format!("Nil")
-            },
+            }
         }
     }
 }

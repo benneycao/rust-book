@@ -76,22 +76,3 @@ fn test_multiple_producer() {
         eprintln!("Got = {:?}", received);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

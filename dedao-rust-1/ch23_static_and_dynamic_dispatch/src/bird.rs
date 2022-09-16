@@ -37,9 +37,9 @@ fn dynamic_dispatch_fly(bird: &dyn Bird) {
 
 fn create_bird(name: &str) -> Option<Box<dyn Bird>> {
     match name {
-        "duck" => { Some(Box::new(Duck)) }
-        "swan" => { Some(Box::new(Swan)) }
-        _ => { None }
+        "duck" => Some(Box::new(Duck)),
+        "swan" => Some(Box::new(Swan)),
+        _ => None,
     }
 }
 
@@ -63,7 +63,6 @@ fn test_static_and_dynamic_dispatch() {
     dynamic_dispatch_fly(&swan);
     println!();
 
-
     println!("create_bird(name) -> Option<Box<dyn Bird>>");
     let bird = create_bird("duck");
     match bird {
@@ -78,8 +77,13 @@ fn print_trait_object(p: &dyn Bird) {
     let (data, vtable): (usize, *const usize) = unsafe { mem::transmute(p) };
     println!("Trait Object [data: {} vtable: {:?}]", data, vtable);
     unsafe {
-        println!("data in vtable [{}, {}, {}, {}]",
-                 *vtable, *vtable.offset(1), *vtable.offset(2), *vtable.offset(3));
+        println!(
+            "data in vtable [{}, {}, {}, {}]",
+            *vtable,
+            *vtable.offset(1),
+            *vtable.offset(2),
+            *vtable.offset(3)
+        );
     }
 }
 
@@ -91,8 +95,11 @@ fn test_trait_object() {
     let p_duck = &duck;
     // 对象指针转换为 trait object 类型指针，占16个字节，8个字节为普通的指针指向对象内存地址，8个为虚函数表
     let p_bird = p_duck as &dyn Bird;
-    println!("Size of p_duck {}, Size of p_bird {}",
-             mem::size_of_val(&p_duck), mem::size_of_val(&p_bird));
+    println!(
+        "Size of p_duck {}, Size of p_bird {}",
+        mem::size_of_val(&p_duck),
+        mem::size_of_val(&p_bird)
+    );
     let duck_fly: usize = Duck::fly as usize;
     let swan_fly: usize = Swan::fly as usize;
     println!("Duck::fly {}", duck_fly);

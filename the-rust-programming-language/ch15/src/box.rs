@@ -1,6 +1,6 @@
+use crate::r#box::List::{Cons, Nil};
 use std::io::Take;
 use std::ops::Deref;
-use crate::r#box::List::{Cons, Nil};
 
 fn quick_start() {
     let s = Box::new("Hello");
@@ -26,13 +26,9 @@ fn box_list() {
     // cannot be allowed to compile,
     // because the compiler doesn't know the variable size.
     // let list = Cons(1, Cons(2, Cons(3, Nil)));
-    let list = Cons(1,
-                    Box::new(Cons(2,
-                                  Box::new(Cons(3,
-                                                Box::new(Nil))))));
+    let list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));
     eprintln!("list = {:?}", list);
 }
-
 
 #[test]
 fn test_box_list() {
@@ -57,7 +53,7 @@ fn test_deref() {
 #[test]
 fn owner_smart_pointer() {
     struct MyBox<T>(T);
-    impl <T> MyBox<T> {
+    impl<T> MyBox<T> {
         fn new(x: T) -> MyBox<T> {
             MyBox(x)
         }
@@ -92,15 +88,4 @@ fn owner_smart_pointer() {
     }
     let i = MyI32(100);
     show_i32(&i);
-
 }
-
-
-
-
-
-
-
-
-
-

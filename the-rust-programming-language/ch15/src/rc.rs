@@ -1,5 +1,5 @@
-use std::rc::Rc;
 use crate::rc::List::{Cons, Nil};
+use std::rc::Rc;
 
 /// # Rc<T> Reference counting smart pointer
 /// use Rc<T> to sharing data

@@ -5,7 +5,9 @@ fn test_debug() {
     struct Hello {
         word: String,
     }
-    let hello = Hello { word: "Hello World!".to_string() };
+    let hello = Hello {
+        word: "Hello World!".to_string(),
+    };
 
     // 打印实现 Debug trait 的 String type
     println!("word is {:?}", hello.word);

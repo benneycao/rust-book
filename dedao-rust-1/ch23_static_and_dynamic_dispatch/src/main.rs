@@ -1,6 +1,6 @@
 mod bird;
-mod object_safe;
 mod impl_trait;
+mod object_safe;
 
 fn main() {
     println!("Hello, world!");

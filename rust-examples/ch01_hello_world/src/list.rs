@@ -18,7 +18,9 @@ impl Display for List {
         for (count, v) in v.iter().enumerate() {
             // 对每个元素除第一个元素加上 `,`
             // 使用 `?` 来返回错误
-            if count != 0 { write!(f, ", ")?; }
+            if count != 0 {
+                write!(f, ", ")?;
+            }
             write!(f, "{}: {}", count, v)?;
         }
         write!(f, "]")

@@ -32,6 +32,10 @@ name = "ch04"
 version = "0.1.0"
 
 [[package]]
+name = "ch06_memory"
+version = "0.1.0"
+
+[[package]]
 name = "ch09_function"
 version = "0.1.0"
 

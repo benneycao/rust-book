@@ -12,10 +12,12 @@ fn test_formatter() {
     // 可以使用位置参数
     println!("{0}, this is {1}. {1}, this is {0},", "Alice", "Bob");
     // 可以使用命名参数
-    println!("{subject} {verb} {object}",
-             subject = "the quick brown fox",
-             object = "the lazy dog",
-             verb = "jumps over");
+    println!(
+        "{subject} {verb} {object}",
+        subject = "the quick brown fox",
+        object = "the lazy dog",
+        verb = "jumps over"
+    );
     // 还可以指定输出格式
     println!("{} of {:b} people know binary, the other half don't", 1, 2);
 }

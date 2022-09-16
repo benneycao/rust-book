@@ -17,20 +17,33 @@ struct Shoe {
 }
 
 fn shoes_in_my_size(shoes: Vec<Shoe>, shoe_size: u8) -> Vec<Shoe> {
-    shoes.into_iter()
-        .filter(|x| x.size == shoe_size)
-        .collect()
+    shoes.into_iter().filter(|x| x.size == shoe_size).collect()
 }
 
 #[test]
 fn test_shoes_in_my_size() {
     let shoes = vec![
-        Shoe { size: 44, color: "red".to_string() },
-        Shoe { size: 42, color: "yellow".to_string() },
-        Shoe { size: 43, color: "blue".to_string() },
+        Shoe {
+            size: 44,
+            color: "red".to_string(),
+        },
+        Shoe {
+            size: 42,
+            color: "yellow".to_string(),
+        },
+        Shoe {
+            size: 43,
+            color: "blue".to_string(),
+        },
     ];
     // eprintln!("my_size_show = {:?}", shoes_in_my_size(&shoes, 42));
-    assert_eq!(shoes_in_my_size(shoes, 42), vec![Shoe { size: 42, color: "yellow".to_string() }]);
+    assert_eq!(
+        shoes_in_my_size(shoes, 42),
+        vec![Shoe {
+            size: 42,
+            color: "yellow".to_string()
+        }]
+    );
 }
 
 /// Create my struct implement the Iterator trait
@@ -43,7 +56,6 @@ impl Counter {
         Self { count: 0 }
     }
 }
-
 
 impl Iterator for Counter {
     type Item = u32;

@@ -3,17 +3,26 @@ struct CellV1<T> {
 }
 
 impl<T> CellV1<T> {
-    fn new(v: T) -> Self where T: Copy {
+    fn new(v: T) -> Self
+    where
+        T: Copy,
+    {
         CellV1 { value: v }
     }
 
-    fn set(&self, v: T) where T: Copy {
+    fn set(&self, v: T)
+    where
+        T: Copy,
+    {
         unsafe {
             let p = &(self.value) as *const T as *mut T;
             *p = v;
         }
     }
-    fn get(&self) -> T where T: Copy {
+    fn get(&self) -> T
+    where
+        T: Copy,
+    {
         self.value
     }
 }

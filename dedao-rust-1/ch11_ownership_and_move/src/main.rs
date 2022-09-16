@@ -26,6 +26,5 @@ fn main() {
     eprintln!("v2 = {:?}", v2);
     // 0x16d53ef1c - 0x16d53ef18 = 4;
     println!("the v1 address: {:p}", &v1); // the v1 address: 0x16d53ef18
-    println!("the v2 address: {:p}", &v2);  // the v2 address: 0x16d53ef1c
+    println!("the v2 address: {:p}", &v2); // the v2 address: 0x16d53ef1c
 }
-

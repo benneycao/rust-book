@@ -1,7 +1,7 @@
 mod comment;
-mod formatted_print;
 mod debug;
 mod display;
+mod formatted_print;
 mod list;
 
 fn main() {

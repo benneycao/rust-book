@@ -74,8 +74,8 @@ fn largest_char(list: &[char]) -> char {
 
 /// now we use generics type to create a function can send i32 or char type to params
 fn largest<T>(list: &[T]) -> T
-    where
-        T: Copy + PartialOrd,
+where
+    T: Copy + PartialOrd,
 {
     let mut largest = list[0];
 
@@ -105,19 +105,22 @@ struct Point<T> {
 /// create different function when have different trait bound
 /// create a generics function have trait bound
 impl<T> Point<T>
-    where T: Display {
+where
+    T: Display,
+{
     fn show_point(&self) {
         println!("x: {}, y: {} ", self.x, self.y);
     }
 }
 
 impl<T> Point<T>
-    where T: Copy + Add<Output=T> {
+where
+    T: Copy + Add<Output = T>,
+{
     fn get_z(&self) -> T {
         self.x + self.y
     }
 }
-
 
 #[test]
 fn test_point_struct() {
