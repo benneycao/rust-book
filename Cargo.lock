@@ -169,7 +169,15 @@ name = "rust_temp"
 version = "0.1.0"
 
 [[package]]
+name = "s2_closure_and_iterator"
+version = "0.1.0"
+
+[[package]]
 name = "s5_circle_self_ref"
+version = "0.1.0"
+
+[[package]]
+name = "s6_thread_process"
 version = "0.1.0"
 
 [[package]]

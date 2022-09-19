@@ -26,5 +26,7 @@ members = [
     "dedao-rust-1/ch26_standard_library",
     "dedao-rust-1/ch27_concurrence",
     "dedao-rust-1/ch29_shared_state",
+    "course_rs/ch03_advance/s2_closure_and_iterator",
     "course_rs/ch03_advance/s5_circle_self_ref",
+    "course_rs/ch03_advance/s6_thread_process",
 ]
