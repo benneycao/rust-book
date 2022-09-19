@@ -1,7 +1,6 @@
 [workspace]
 members = [
     "rust_temp",
-    "rust-in-action/ch06_memory",
     "the_rust_cookbook/ch01_algorithms",
     "rust-examples/ch01_hello_world",
     "rust-examples/ch02_primitives",
